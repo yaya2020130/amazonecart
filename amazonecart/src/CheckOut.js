@@ -13,6 +13,7 @@ function CheckOut() {
          </h2>
          {basket.map(item=>(
            <CheckoutProduct
+           id={item.id}
            title={item.title}
            image={item.image}
            price={item.price}
