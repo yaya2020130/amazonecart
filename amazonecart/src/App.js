@@ -14,18 +14,18 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        
         <Switch>
           <Route path="/Login">
 
             <Login />
           </Route>
           <Route path="/CheckOut">
-
+          <Header />
             <CheckOut />
           </Route>
           <Route path="/">
-
+          <Header />
             <Home />
           </Route>
 
