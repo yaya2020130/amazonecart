@@ -3,6 +3,9 @@ import Product from "./Product";
 export const initialState={
   basket:[],
 }
+export const calculateTotal=(basket)=>{
+  return basket.reduce((price,item)=>item.price+ price,0)
+}
 const reducer =(state,action)=>{
   console.log(action)
   switch(action.type){
