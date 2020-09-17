@@ -12,6 +12,7 @@ import Payment from './Payment.js'
 import Header from './Header'
 import Home from './Home'
 import Login from './Login'
+import Orders from './Orders'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import CheckOut from './CheckOut';
 import { useStateValue } from './StateProvider'
@@ -41,10 +42,15 @@ function App() {
       <div className="App">
 
         <Switch>
+          <Route path="/Orders">
+          <Header />
+            <Orders />
+          </Route>
           <Route path="/Login">
 
             <Login />
           </Route>
+
           <Route path="/CheckOut">
             <Header />
             <CheckOut />
